@@ -7,15 +7,15 @@
 
 ## Instalação em ambiente local:
 
-É preciso ter Node e npm instalados globalmente
+Você precisa do Node.js, o node global package yarn:
 
 Instalação:
 
-`npm install` 
+`yarn install` 
 
 Para iniciar a aplicação:
 
-`npm start`
+`yarn start`
 
 Para acessar a aplicação no browser:
 
