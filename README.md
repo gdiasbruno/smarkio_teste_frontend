@@ -11,15 +11,18 @@ Você precisa do Node.js, o node global package yarn:
 
 Instalação:
 
-`yarn install` 
+    $ git clone https://github.com/gdiasbruno/smarkio_teste_backend.git
+    $ cd smarkio_teste_backend
+    $ yarn install
+    $ yarn typeorm migration:run
 
 Para iniciar a aplicação:
 
-`yarn start`
+    $ yarn start
 
 Para acessar a aplicação no browser:
 
-`localhost:3000`  
+`http://localhost:3000`  
 
 
 ## Descrição
