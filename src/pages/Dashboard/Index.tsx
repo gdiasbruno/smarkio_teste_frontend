@@ -27,9 +27,9 @@ const Dashboard: React.FC = () => {
     event.preventDefault();
     const response = await api.post<Comment>('/', { commentBody: newComment });
 
-    const revert = [...comments, response.data].reverse();
+    // const revert = [...comments, response.data].reverse();
 
-    setComments(revert);
+    setComments([response.data, ...comments]);
   }
 
   async function handleTextToSpeech(tts: string): Promise<void> {
@@ -84,17 +84,11 @@ const Dashboard: React.FC = () => {
           {play && (
             // eslint-disable-next-line jsx-a11y/media-has-caption
             <audio
-              src="http://localhost:3333/audio.wav"
+              src={`http://localhost:3333/audio.wav?a=${new Date().getTime()}`}
               preload="none"
               autoPlay
-            >
-              {/* <track
-                default
-                kind="captions"
-                srcLang="en"
-                src="http://localhost:3333/audio.wav"
-              /> */}
-            </audio>
+              onEnded={() => setPlay(false)}
+            />
           )}
         </Repositories>
       </Comments>

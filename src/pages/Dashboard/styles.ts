@@ -11,13 +11,13 @@ export const Repositories = styled.div``;
 
 export const Main = styled.div`
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 export const Comment = styled.div`
   margin-right: 15px;
-  width: 100%;
-  min-width: 400px;
+  margin-bottom: 20px;
 
   textarea {
     width: 100%;
@@ -39,10 +39,7 @@ export const Comment = styled.div`
   }
 `;
 
-export const Comments = styled.div`
-  width: 100%;
-  min-width: 400px;
-`;
+export const Comments = styled.div``;
 
 export const Display = styled.div`
   display: flex;
