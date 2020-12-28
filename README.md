@@ -1,4 +1,4 @@
-# # :star: SMARKIO TESTE FRONTEND
+# :star: SMARKIO TESTE FRONTEND
 #### Front-end desenvolvido em REACT da aplicação web desenvolvida para o teste prático de programação da SMARKIO.
 
 ## Screen Shot
