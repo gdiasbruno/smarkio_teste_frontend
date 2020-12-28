@@ -14,7 +14,6 @@ Instalação:
     $ git clone https://github.com/gdiasbruno/smarkio_teste_frontend.git
     $ cd smarkio_teste_frontend
     $ yarn install
-    $ yarn typeorm migration:run
 
 Para iniciar a aplicação:
 
